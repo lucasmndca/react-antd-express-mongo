@@ -1,11 +1,44 @@
 * {
   box-sizing: border-box;
+  --blue1: #108ee9;
+  --blue2: #001529;
+  --yellow: #f6e39a;
+  --gray1: #333333;
+  --gray2: #999999;
+  --gray3: #f9f9f9;
+  --gray4: #e4e4e4;
 }
 
 html,
 body {
   margin: 0;
   height: 100%;
+}
+
+.menu {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  min-width: 84px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: var(--yellow);
+}
+
+.menu li:hover a {
+  color: var(--gray1);
+}
+
+.menu li a {
+  display: block;
+  height: 64px;
+  color: white;
 }
 
 .login-page {
@@ -19,9 +52,41 @@ body {
 }
 
 .login-page form {
-    width: 100%;
+  width: 100%;
 }
 
 .login-page .field {
-    width: 100%;
+  width: 100%;
+}
+
+.page-container {
+  width: 100%;
+  padding: 0 1rem;
+  color: var(--gray1);
+  line-height: normal;
+}
+
+.page-header {
+  background-color: var(--gray3);
+  border-bottom: 2px solid var(--gray4);
+  color: var(--gray1);
+  padding: 2rem 1rem;
+  margin: 0 !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header h1,
+.page-header h3 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.page-header h3 {
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
 }

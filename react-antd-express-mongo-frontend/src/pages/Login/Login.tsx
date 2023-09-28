@@ -1,19 +1,6 @@
-import {
-  Button,
-  Card,
-  Checkbox,
-  Col,
-  Form,
-  Input,
-  Row,
-  Space,
-  Typography,
-} from 'antd';
-const { Title } = Typography;
+import { Button, Card, Checkbox, Col, Form, Input, Row } from 'antd';
 
-interface IProps {}
-
-export default function LoginPage(props: IProps) {
+const LoginPage: React.FC = () => {
   const onFinish = (values: any) => {
     console.log('Success:', values);
   };
@@ -69,4 +56,6 @@ export default function LoginPage(props: IProps) {
       </Card>
     </div>
   );
-}
+};
+
+export default LoginPage;
